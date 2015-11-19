@@ -79,7 +79,7 @@ set scrolloff=10
 
 set completeopt=longest,menuone
 
-"colorscheme wombat256mod
+colorscheme wombat256mod
 
 " ================  no backup, no shit, everithing is git
 set nobackup
@@ -90,6 +90,9 @@ set noswapfile
 "" ================ Keys for plugins =============================
 nnoremap <silent> <F2> :NERDTreeToggle <CR>
 nnoremap <silent> <F8> :TagbarToggle<CR>
+
+" jump to definition
+nnoremap <silent> <C-]> :YcmCompleter GoTo<CR> 
 
 " ================ spellcheck =============================
 nnoremap  <F9> :setlocal spell spelllang=en_us<CR>
