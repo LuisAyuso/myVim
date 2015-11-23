@@ -57,7 +57,7 @@ set mouse=a
 
 " tabs 4 spaces 
 set ts=4
-"set expandtab
+set expandtab
 
 set shiftwidth=4
 
@@ -91,8 +91,7 @@ set noswapfile
 nnoremap <silent> <F2> :NERDTreeToggle <CR>
 nnoremap <silent> <F8> :TagbarToggle<CR>
 
-" jump to definition
-nnoremap <silent> <C-]> :YcmCompleter GoTo<CR> 
+
 
 " ================ spellcheck =============================
 nnoremap  <F9> :setlocal spell spelllang=en_us<CR>
@@ -100,6 +99,17 @@ nnoremap  <F10> :set nospell<CR>;
 nnoremap <silent> <F11> ]s
 nnoremap <silent> <F12> z=
 
+
+" ================ YCM ==============================
+
+"let g:ycm_min_num_of_chars_for_completion = 4
+" auto load found config files
+let g:ycm_confirm_extra_conf = 0 
+
+" jump to definition
+nnoremap <C-]> :YcmCompleter GoTo<CR> 
+nnoremap <F3> :echo 'Jump to def'<CR> :YcmCompleter GoToDefinition<CR> 
+nnoremap <F4> :echo 'Jump to decl'<CR> :YcmCompleter GoToDeclaration<CR> 
 
 " ================ build ============================
 "let &makeprg = 'make -j8'
