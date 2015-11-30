@@ -112,11 +112,12 @@ nnoremap <F3> :echo 'Jump to def'<CR> :YcmCompleter GoToDefinition<CR>
 nnoremap <F4> :echo 'Jump to decl'<CR> :YcmCompleter GoToDeclaration<CR> 
 
 " ================ build ============================
-"let &makeprg = 'make -j8'
+let &makeprg = 'make -j8'
 
 " ================ TAGS =============================
 " 		this makes the database to jump between tags
-"set tags=tags;/ " search tags from curr directory upwards
+" 		    BEWARE of the mighty semicolon, it makes the search recursive
+set tags=tags;
 
 " ================ Python ===========================
 "" increase max lines for python marking and syntax check
