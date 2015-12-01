@@ -40,6 +40,9 @@
 		NeoBundle "Valloric/YouCompleteMe"
 		NeoBundle "rdnetto/YCM-Generator"
 	
+        " easy cpp format plugin
+        NeoBundle "LuisAyuso/cppFormat"
+
 
  call neobundle#end()
 
@@ -75,7 +78,7 @@ set cursorline
 set formatoptions=c,q,r,t
 set scrolloff=10
 
-"set textwidth=120
+set textwidth=160
 
 set completeopt=longest,menuone
 
@@ -85,6 +88,9 @@ colorscheme wombat256mod
 set nobackup
 set nowb
 set noswapfile
+
+" ================= Auto Reload 
+set autoread 
 
 
 "" ================ Keys for plugins =============================
@@ -123,4 +129,26 @@ set tags=tags;
 "" increase max lines for python marking and syntax check
 "let g:pymode_options_max_line_length = 160
 "" avoid showing pyc files in neerdtree
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 "let NERDTreeIgnore = ['\.pyc$']
