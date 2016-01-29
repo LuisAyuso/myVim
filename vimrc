@@ -126,29 +126,7 @@ let &makeprg = 'make -j8'
 set tags=tags;
 
 " ================ Python ===========================
-"" increase max lines for python marking and syntax check
-"let g:pymode_options_max_line_length = 160
-"" avoid showing pyc files in neerdtree
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"let NERDTreeIgnore = ['\.pyc$']
+" increase max lines for python marking and syntax check
+let g:pymode_options_max_line_length = 160
+" avoid showing pyc files in neerdtree
+let NERDTreeIgnore = ['\.pyc$']
